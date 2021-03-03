@@ -23,8 +23,5 @@ volume /opt/
 
 WORKDIR /buildozer/
 CMD git clone https://github.com/kivymd/KivyMD.git
-CMD 
-CMD 
-
 CMD cd KivyMD/demos/kitchen_sink/
 CMD buildozer android debug
