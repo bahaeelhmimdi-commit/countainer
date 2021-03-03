@@ -22,6 +22,6 @@ VOLUME /p4a/
 volume /opt/
 
 WORKDIR /buildozer/
-CMD git clone https://github.com/kivymd/KivyMD.git
-CMD cd KivyMD/demos/kitchen_sink/
+CMD git clone https://github.com/bahaeelhmimdi-commit/countainer
+CMD cd countainer
 CMD buildozer android debug
