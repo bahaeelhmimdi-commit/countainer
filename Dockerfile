@@ -20,7 +20,6 @@ RUN apt-get update && \
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
 USER docker
-CMD mkdir /var/local/temp_for_zip_extract
-
+CMD cd /buildozer/
 CMD wget https://itechiaio-my.sharepoint.com/personal/bahae_elhmimdi_i-techia_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbahae%5Felhmimdi%5Fi%2Dtechia%5Fcom%2FDocuments%2Fcp%2Ezip
-CMD unzip cp.zip -d /buildozer/
+CMD unzip cp.zip 
