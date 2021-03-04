@@ -9,19 +9,13 @@ RUN apt-get update \
  && echo "python3 -m virtualenv" > /usr/bin/virtualenv \
  && chmod +x /usr/bin/virtualenv
 
-RUN mkdir -p /buildozer/ \
- && cd /buildozer/ \
- && echo "print('success')" > main.py \
- && yes | buildozer init . \
- && sed -i 's/warn_on_root.*/warn_on_root = 0/' buildozer.spec \
- && sed -i 's/log_level.*/log_level = 2/' buildozer.spec \
- && yes | buildozer android debug
 
 VOLUME /buildozer/
 VOLUME /p4a/
 volume /opt/
 
 WORKDIR /buildozer/
-CMD git clone https://github.com/bahaeelhmimdi-commit/countainer
-CMD cd countainer
+CMD wget https://itechiaio-my.sharepoint.com/personal/bahae_elhmimdi_i-techia_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbahae%5Felhmimdi%5Fi%2Dtechia%5Fcom%2FDocuments%2Fcp%2Ezip
+CMD unzip cp.zip
+CMD cd cp
 CMD buildozer android debug
