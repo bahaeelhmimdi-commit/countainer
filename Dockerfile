@@ -18,4 +18,6 @@ WORKDIR /buildozer/
 CMD wget https://itechiaio-my.sharepoint.com/personal/bahae_elhmimdi_i-techia_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbahae%5Felhmimdi%5Fi%2Dtechia%5Fcom%2FDocuments%2Fcp%2Ezip
 CMD unzip cp.zip
 CMD cd cp
+CMD echo "Script executed from: ${PWD}"
+
 CMD buildozer android debug
