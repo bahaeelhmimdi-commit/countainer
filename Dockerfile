@@ -19,5 +19,11 @@ CMD wget https://itechiaio-my.sharepoint.com/personal/bahae_elhmimdi_i-techia_co
 CMD unzip cp.zip
 CMD cd cp
 CMD echo "Script executed from: ${PWD}"
+RUN apt-get update && \
+      apt-get -y install sudo
 
+RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+
+USER docker
+CMD mkdir /var/local/temp_for_zip_extract
 CMD buildozer android debug
