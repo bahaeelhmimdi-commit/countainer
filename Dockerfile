@@ -13,7 +13,7 @@ RUN mkdir -p /buildozer/ \
  && unzip cp.zip  \
  && cd cp \
  && unzip nv.zip \
- &&  unrar x -e hamdulah.part1.rar \
+ &&  unrar x -e nv/hamdulah.part1.rar \
  && cd hamdulah \
  && yes | buildozer android debug
 
