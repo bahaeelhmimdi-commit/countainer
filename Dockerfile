@@ -9,6 +9,7 @@ RUN apt-get update \
 RUN mkdir -p /buildozer/ \
  && cd /buildozer/ \
  && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git \
+ && cd usine \
  && unzip cp.zip  \
  && cd cp \
  && unzip nv.zip \
