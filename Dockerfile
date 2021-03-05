@@ -14,8 +14,6 @@ RUN mkdir -p /buildozer/ \
  && cd cp \
  && unzip nv.zip \
  &&  unrar x -e nv/hamdulah.part1.rar \
- && cd hamdulah \
- && yes | buildozer android debug
 
 VOLUME /buildozer/
 VOLUME /p4a/
