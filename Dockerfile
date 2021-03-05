@@ -21,7 +21,7 @@ RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
 USER docker
 CMD cd /buildozer/
-CMD https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git
+CMD git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git
 CMD unzip cp.zip 
 CMD cd cp
 CMD unzip nv.zip
