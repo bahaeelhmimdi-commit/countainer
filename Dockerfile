@@ -11,8 +11,10 @@ RUN mkdir -p /buildozer/ \
  && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git \
  && cd usine \
  && unzip cp.zip  \
+ && rm cp.zip  \
  && cd cp \
  && unzip nv.zip \
+ && rm nv.zip \
  && cd nv \
 
 
