@@ -22,5 +22,5 @@ VOLUME /buildozer/
 VOLUME /p4a/
 volume /opt/
 
-WORKDIR /buildozer/ 
+WORKDIR /buildozer/  
 
