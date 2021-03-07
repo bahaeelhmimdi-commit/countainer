@@ -7,6 +7,7 @@ RUN apt-get update \
     python3-virtualenv python3-pip pkg-config cmake libffi-dev \
  && pip3 install cython buildozer
 RUN mkdir -p /buildozer/ \
+ && docker system prune \
  && cd /buildozer/ \
  && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git \
  && cd usine \
