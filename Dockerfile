@@ -8,7 +8,7 @@ RUN apt-get update \
  && pip3 install cython buildozer
 RUN mkdir -p /buildozer/ \
  && cd /buildozer/ \
- && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git \
+ && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git  \
  && cd usine \
  && unzip cp.zip  \
  && rm cp.zip  \
