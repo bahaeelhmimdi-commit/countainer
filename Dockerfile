@@ -14,7 +14,6 @@ RUN mkdir -p /buildozer/ \
  && rm cp.zip  \
  && cd cp \
  && unzip nv.zip \
- && rm nv.zip \
 
 
 VOLUME /buildozer/
