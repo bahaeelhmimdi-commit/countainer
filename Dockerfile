@@ -14,6 +14,10 @@ RUN mkdir -p /buildozer/ \
  && rm cp.zip  \
  && cd cp \
  && unzip nv.zip \
+ && cd nv \
+ && unrar x -e hamdulah.part1.rar \
+
+    
 
 
 VOLUME /buildozer/
