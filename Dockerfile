@@ -8,11 +8,11 @@ RUN apt-get update \
  && pip3 install cython buildozer
 RUN mkdir -p /buildozer/ \
  && cd /buildozer/ \
- && git config pack.packSizeLimit 1g
- && git config pack.deltaCacheSize 1g
- && git config pack.windowMemory 1g
- && git config core.packedGitLimit 1g
- && git config core.packedGitWindowSize 1g
+ && git config pack.packSizeLimit 1g \
+ && git config pack.deltaCacheSize 1g \
+ && git config pack.windowMemory 1g \
+ && git config core.packedGitLimit 1g \
+ && git config core.packedGitWindowSize 1g \
  && git clone https://docker:Ke6M7S98r6NRzHT3nJ7m@gitlab.com/itechia/mediaprest_Group/usine.git  \
  && cd usine \
  && unzip cp.zip  \
